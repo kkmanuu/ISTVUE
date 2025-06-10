@@ -5,7 +5,7 @@
         <div class="flex justify-between items-center">
           <!-- Logo -->
           <div class="flex items-center">
-            <img src="https://via.placeholder.com/80" alt="School Logo" class="h-16 mr-4" />
+           <img src="../assets/images/Wk.jpg" alt="School Logo" class="h-16 mr-4" />
             <span class="text-3xl font-bold font-poppins">Horizon Academy</span>
           </div>
 
@@ -33,7 +33,7 @@
             <div class="relative group">
               <button class="text-white hover:text-yellow-300 font-medium font-roboto text-lg transition duration-300 ease-in-out flex items-center">
                 Admissions
-                <i class="fas fa-chevron-down ml-2"></i>
+                <i class="fas fa-chevron-down mr-2"></i>
               </button>
               <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg mt-2 w-56 border border-gray-200">
                 <router-link 
@@ -48,11 +48,17 @@
                 >
                   Tuition
                 </router-link>
+                <router-link 
+                  to="/admissions/gallery" 
+                  class="block px-5 py-3 text-gray-700 hover:bg-yellow-50 hover:text-blue-800 font-roboto"
+                >
+                  School Gallery
+                </router-link>
               </div>
             </div>
             <router-link 
               to="/contact" 
-              class="text-white hover:text-yellow-300 font-medium font-roboto text-lg transition duration-300 ease-in-out transform hover:scale-110"
+              class="text-white hover:text-yellow-300 font-medium font-roboto text-lg transition duration-400 ease-in-out transform hover:scale-105"
             >
               Contact
             </router-link>
@@ -111,6 +117,13 @@
                 @click="toggleMenu"
               >
                 Tuition
+              </router-link>
+              <router-link 
+                to="/admissions/gallery" 
+                class="block py-2 text-gray-700 hover:text-blue-800 font-roboto"
+                @click="toggleMenu"
+              >
+                School Gallery
               </router-link>
             </div>
           </div>
