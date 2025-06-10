@@ -5,6 +5,7 @@ import ProgramsView from "../views/ProgramsView.vue";
 import ContactView from "../views/ContactView.vue";
 import ApplyView from "../views/ApplyView.vue";
 import TuitionView from "../views/TuitionView.vue";
+import GalleryView from "../views/GalleryView.vue";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/admissions/tuition",
     name: "tuition",
     component: TuitionView,
+  },
+  {
+    path: "/admissions/gallery",
+    name: "gallery",
+    component: GalleryView,
   },
 ];
 
